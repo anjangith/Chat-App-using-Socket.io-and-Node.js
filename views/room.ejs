@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include ../partials/head %>
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container">
+  <div class="row">
+<h1 class="col-md-9 ">CREATE A ROOM</h1>
+<button type="button" id="roomback" class="btn btn-danger ">BACK</button>
+</div>
+<h3 id="username">Username-Name:Anonymous</h3>
+<h3 id="roomtext">Room-Name:Anonymous</h3>
+<form>
+<div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr" placeholder="Anonymous">
+</div>
+<button type="button" id="myBtn" class="btn btn-primary ">UPDATE</button>
+
+<div class="form-group">
+  <label for="roomname">Room-name:</label>
+  <input type="text" class="form-control" id="roomnamefield" placeholder="Anonymous">
+</div>
+<button type="button" id="roomjoin" class="btn btn-primary ">JOIN</button>
+</form>
+</div>
+
+
+</div>
+<div class="container">
+  <h1>Messages</h1>
+  <div id="groupmessages">
+</div>
+  <div class="sticky-bottom position-static">
+    <div class="form-group">
+      <label for="usr">Message:</label>
+      <input type="text" class="form-control" id="msgTxt" placeholder="Anonymous">
+    </div>
+    <button type="button" id="btnsnd" class="btn btn-success">SEND</button>
+  </div>
+</div>
+
+</body>
+ <% include ../partials/script %>
+</html>
